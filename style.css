@@ -47,6 +47,48 @@
 .fab {
     color: #000000;
 }
+.slider-cont {
+    overflow: hidden;
+    width: 414px;
+}
+
+.slider-rcnc {
+    animation-name: slide-left;
+    animation-duration: 15.2s;
+    animation-timing-function: ease;
+    animation-delay: 3.2s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    float: left;
+    width: 2800px;
+}
+
+@keyframes slide-left {
+    0%{
+     -webkit-transform: translateX(10px);
+     transform: translateX(10px);
+   }
+   25%{
+     -webkit-transform: translateX(-208px);
+     transform: translateX(-208px);
+   }
+   50%{
+     -webkit-transform: translateX(-420px);
+     transform: translateX(-420px);
+   }
+     
+  75%{
+     -webkit-transform: translateX(-625px);
+     transform: translateX(-625px);
+   }
+     
+   100%{
+     -webkit-transform: translateX(10px);
+     transform: translateX(10px);
+   }
+ }
+
 /* footer styling */
 #footer {
     background-color: #808080;
